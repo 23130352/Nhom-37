@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Học Online — Trang chủ</title>
+  <meta name="description" content="Trang bán khóa học cho học sinh — khoá học lập trình, Toán, Tiếng Anh..."/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="site">
+
+        <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="Trang chủ — Học Online">
+          <img src="assets/logo.png" alt="Học Online logo" class="brand-logo" />
+          <span class="brand-name">HọcOnline</span>
+        </a>
+
+                <form class="search" role="search" aria-label="Tìm khóa học">
+          <input type="search" id="q" name="q" placeholder="Tìm khóa học, môn học hoặc giảng viên..." aria-label="Tìm khóa học"/>
+          <button type="submit" aria-label="Tìm">Tìm</button>
+        </form>
+
+                <nav class="top-nav" aria-label="Truy cập nhanh">
+          <a href="#" class="nav-link">Khóa học</a>
+          <a href="#" class="nav-link">Lộ trình</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="#" class="nav-link">Hỗ trợ</a>
+          <div class="auth">
+            <a href="#" class="btn btn-ghost">Đăng nhập</a>
+            <a href="#" class="btn btn-primary">Đăng ký</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+        <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Học hiệu quả — Chuẩn đầu ra — Giáo viên chất lượng</h1>
+          <p class="lead">Khoá học trực tuyến cho học sinh: Toán, Lý, Hóa, Tiếng Anh, lập trình... Học mọi lúc, mọi nơi với bài giảng và đề luyện chất lượng.</p>
+          <div class="hero-cta">
+            <a href="#courses" class="btn btn-cta">Khám phá khóa học</a>
+            <a href="#trial" class="btn btn-outline">Dùng thử miễn phí</a>
+          </div>
+          <ul class="hero-features">
+            <li><strong>Giáo viên TOP:</strong> bài giảng chi tiết</li>
+            <li><strong>Bài tập & đề thi:</strong> luyện tập theo trình độ</li>
+            <li><strong>Học linh hoạt:</strong> video + tài liệu + livestream</li>
+          </ul>
+        </div>
+        <div class="hero-right">
+          <img src="assets/hero-illustration.png" alt="Học online illustration" />
+        </div>
+      </div>
+    </section>
+
+        <section class="filters container" id="course-filters">
+      <button class="chip active" data-filter="all">Tất cả</button>
+      <button class="chip" data-filter="toan">Toán</button>
+      <button class="chip" data-filter="tieng-anh">Tiếng Anh</button>
+      <button class="chip" data-filter="lap-trinh">Lập trình</button>
+      <button class="chip" data-filter="ki-nang">Kĩ năng</button>
+      <button class="chip" data-filter="giao-vien">Giáo viên nổi bật</button>
+    </section>
+
+        <section id="courses" class="container section">
+      <div class="section-head">
+        <h2>Khóa học nổi bật</h2>
+        <a href="#" class="link-more">Xem tất cả</a>
+      </div>
+
+      <div class="grid courses-grid" aria-live="polite">
+                <article class="card course" data-category="toan">
+          <img class="course-cover" src="https://via.placeholder.com/400x220?text=Toan+Lop+10" alt="Khóa Toán Lớp 10"/>
+          <div class="course-body">
+            <h3 class="course-title">Toán Lớp 10 - Chuyên đề Đại số</h3>
+            <div class="course-teacher">
+              <img src="https://via.placeholder.com/40" alt="Avatar Thầy A" class="teacher-avatar" />
+              <span class="course-meta">Giảng viên: Thầy A</span>
+            </div>
+            <div class="course-rating">
+              <span>⭐️ 4.8</span>
+              <span class="muted">(152 đánh giá)</span>
+            </div>
+            <div class="course-bottom">
+              <div class="price">
+                <strong>₫199,000</strong>
+                <span class="price-old">₫399,000</span>
+              </div>
+              <a class="btn btn-sm" href="#">Xem</a>
+            </div>
+          </div>
+        </article>
+
+                <article class="card course" data-category="tieng-anh">
+          <img class="course-cover" src="https://via.placeholder.com/400x220?text=Tieng+Anh+Lop+9" alt="Khóa Tiếng Anh"/>
+          <div class="course-body">
+            <h3 class="course-title">Tiếng Anh Lớp 9 - Giao tiếp cơ bản</h3>
+            <div class="course-teacher">
+              <img src="https://via.placeholder.com/40" alt="Avatar Cô B" class="teacher-avatar" />
+              <span class="course-meta">Giảng viên: Cô B</span>
+            </div>
+            <div class="course-rating">
+              <span>⭐️ 4.7</span>
+              <span class="muted">(98 đánh giá)</span>
+            </div>
+            <div class="course-bottom">
+              <div class="price">
+                <strong>₫149,000</strong>
+                <span class="price-old">₫299,000</span>
+              </div>
+              <a class="btn btn-sm" href="#">Xem</a>
+            </div>
+          </div>
+        </article>
+
+                <article class="card course" data-category="lap-trinh">
+          <img class="course-cover" src="https://via.placeholder.com/400x220?text=Lap+Trinh+Python" alt="Khóa Lập trình Python"/>
+          <div class="course-body">
+            <h3 class="course-title">Lập trình Python cho học sinh</h3>
+            <div class="course-teacher">
+              <img src="https://via.placeholder.com/40" alt="Avatar Thầy C" class="teacher-avatar" />
+              <span class="course-meta">Giảng viên: Thầy C</span>
+            </div>
+            <div class="course-rating">
+              <span>⭐️ 4.9</span>
+              <span class="muted">(310 đánh giá)</span>
+            </div>
+            <div class="course-bottom">
+              <div class="price">
+                <strong>₫249,000</strong>
+                <span class="price-old">₫499,000</span>
+              </div>
+              <a class="btn btn-sm" href="#">Xem</a>
+            </div>
+          </div>
+        </article>
+
+                <article class="card course" data-category="toan">
+          <img class="course-cover" src="https://via.placeholder.com/400x220?text=Ly+Hoc+Ky+Thuat" alt="Khóa Lý"/>
+          <div class="course-body">
+            <h3 class="course-title">Vật Lý - Luyện thi</h3>
+            <div class="course-teacher">
+              <img src="https://via.placeholder.com/40" alt="Avatar Thầy D" class="teacher-avatar" />
+              <span class="course-meta">Giảng viên: Thầy D</span>
+            </div>
+            <div class="course-rating">
+              <span>⭐️ 4.6</span>
+              <span class="muted">(85 đánh giá)</span>
+            </div>
+            <div class="course-bottom">
+              <div class="price">
+                <strong>₫179,000</strong>
+                <span class="price-old">₫350,000</span>
+              </div>
+              <a class="btn btn-sm" href="#">Xem</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+        <section class="benefits container section section-alt">
+      <h2>Vì sao chọn chúng tôi</h2>
+      <div class="grid benefits-grid">
+        <div class="benefit">
+          <img src="https://via.placeholder.com/64" alt="">
+          <h4>Giáo trình chuẩn</h4>
+          <p>Tài liệu biên soạn sát chương trình học.</p>
+        </div>
+        <div class="benefit">
+          <img src="https://via.placeholder.com/64" alt="">
+          <h4>Luyện đề & đánh giá</h4>
+          <p>Bộ đề tự luyện có đáp án chi tiết.</p>
+        </div>
+        <div class="benefit">
+          <img src="https://via.placeholder.com/64" alt="">
+          <h4>Giáo viên chuyên môn</h4>
+          <p>Hệ thống giảng viên có kinh nghiệm giảng dạy.</p>
+        </div>
+      </div>
+    </section>
+
+        <section class="testimonials container section section-alt">
+      <h2>Học viên nói gì</h2>
+      <div class="grid test-grid">
+        <blockquote class="testimonial card">
+          <p>Khoá học rất hữu ích, bài giảng ngắn gọn rõ ràng, mình tiến bộ rõ rệt.</p>
+          <cite>— Học viên: A</cite>
+        </blockquote>
+        <blockquote class="testimonial card">
+          <p>Giáo viên tận tâm, có nhiều bài tập luyện tập. Thời gian linh hoạt dễ sắp xếp.</p>
+          <cite>— Học viên: B</cite>
+        </blockquote>
+      </div>
+    </section>
+
+        <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="col">
+          <h4>HọcOnline</h4>
+          <p>Trang học trực tuyến dành cho học sinh — video, bài tập, livestream.</p>
+        </div>
+        <div class="col">
+          <h4>Liên hệ</h4>
+          <p>email: nlu@hoconline.vn<br/>Hotline: 0123 456 789</p>
+        </div>
+        <div class="col">
+          <h4>Về chúng tôi</h4>
+          <a href="#">Giới thiệu</a><br/>
+          <a href="#">Tuyển dụng</a><br/>
+          <a href="#">Chính sách</a>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        <small>© <span id="year"></span> HọcOnline. Bản quyền thuộc về HọcOnline.</small>
+      </div>
+    </footer>
+
+  </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
