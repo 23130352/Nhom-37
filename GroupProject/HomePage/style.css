@@ -2,29 +2,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  font-size: 16px;
-  background: #f4f4f4;
+  font-size: 14px;
+  background: #f0f2f5; /* Màu nền xám nhạt */
   color: #333;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  font-weight: 600;
+  margin: 0 0 10px 0;
 }
+a { text-decoration: none; color: #333; }
+ul { list-style: none; margin: 0; padding: 0; }
+img { max-width: 100%; height: auto; display: block; }
 
-a {
-  color: #8b0000;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .clearfix:after {
@@ -33,299 +26,327 @@ img {
   clear: both;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .site-header {
   background: #ffffff;
-  border-bottom: 2px solid #8b0000;
   padding: 15px 0;
+  border-bottom: 1px solid #ddd;
 }
 
-.header-inner {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.brand {
+.site-header .logo {
   float: left;
-  padding-top: 5px;
+  width: 150px;
 }
 
-.brand-logo {
-  width: 44px;
-  height: 44px;
-  float: left;
-  margin-right: 10px;
+.site-header .header-auth {
+  float: right;
+  padding-top: 10px;
 }
-
-.brand-name {
-  float: left;
-  font-size: 24px;
+.header-auth .phone {
+  margin-right: 15px;
   font-weight: 700;
-  color: #333;
-  padding-top: 8px;
+  color: #f0ad4e;
 }
-
-.top-nav {
-  float: right;
-}
-
-.auth {
-  float: right;
-  margin-left: 15px;
-}
-
-.nav-link {
-  float: left;
-  padding: 15px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #555;
-}
-
-.nav-link:hover {
-  background: #eeeeee;
-  color: #8b0000;
-  text-decoration: none;
+.header-auth .phone .fas {
+  margin-right: 5px;
 }
 
 .btn {
   display: inline-block;
   padding: 8px 14px;
   font-weight: 700;
-  font-size: 14px;
   border-radius: 4px;
   text-decoration: none;
 }
 .btn-ghost {
   border: 1px solid #ccc;
   color: #555;
-}
-.btn-primary {
-  background: #8b0000;
-  color: white;
-  border: 1px solid #8b0000;
-}
-.btn-primary:hover {
-  background: #6e0000;
-  text-decoration: none;
-}
-
-.search {
-  overflow: hidden;
-  padding: 8px 30px 0 30px;
-}
-.search input {
-  width: 80%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  float: left;
-}
-.search button {
-  width: 18%;
-  float: right;
-  padding: 10px;
-  border: none;
-  background: #8b0000;
-  color: white;
-  cursor: pointer;
-}
-
-.hero {
-  background: antiquewhite;
-  padding: 40px 0;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.hero-inner {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.hero-left {
-  float: left;
-  width: 680px;
-}
-.hero-right {
-  float: right;
-  width: 480px;
-}
-
-.hero-left h1 {
-  font-size: 32px;
-  line-height: 1.2;
-}
-.lead {
-  font-size: 18px;
-  color: #555;
-}
-
-.filters {
-  width: 1200px;
-  margin: 20px auto;
-  padding: 15px;
-  background: #ffffff;
-  border: 1px solid #ddd;
-}
-.chip {
-  display: inline-block;
-  padding: 8px 14px;
-  font-size: 14px;
-  font-weight: 600;
-  background: #eeeeee;
-  border: 1px solid #ccc;
-  cursor: pointer;
   margin-right: 10px;
 }
-.chip.active, .chip:hover {
-  background: #8b0000;
+.btn-primary {
+  background: #f0ad4e; /* Màu cam */
   color: white;
-  border-color: #8b0000;
+  border: 1px solid #f0ad4e;
+}
+.btn-primary:hover {
+  background: #ec971f;
+  color: white;
 }
 
-.section {
-  width: 1200px;
-  margin: 0 auto 30px auto;
+.site-header .search {
+  overflow: hidden;
+  padding: 8px 50px 0 50px;
 }
-.section-head {
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #eeeeee;
-  overflow: auto;
-}
-.section-head h2 {
+.search input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
   float: left;
-  margin-bottom: 0;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
 }
-.link-more {
-  float: right;
-  padding-top: 10px;
+.search button {
+  width: 10%;
+  float: left;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+.search button:hover {
+  background: #ddd;
+}
+
+.site-nav {
+  background: #007bff;
+  height: 45px;
+}
+.site-nav li {
+  float: left;
+}
+.site-nav a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
   font-weight: 600;
 }
-
-.grid {
-  overflow: auto;
-  margin: 0 -15px;
+.site-nav a:hover {
+  background: #0056b3; /* Màu xanh đậm hơn */
 }
 
-.card {
-  background: #ffffff;
-  border: 1px solid #ddd;
+.main-wrapper {
+  padding: 20px 0;
+}
+
+.hero-section {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
   margin-bottom: 20px;
 }
-
-.courses-grid .course {
+.hero-sidebar-nav {
   float: left;
-  width: 270px;
-  margin-left: 15px;
-  margin-right: 15px;
+  width: 260px;
+  border: 1px solid #eee;
+  border-radius: 5px;
 }
-.course-cover {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
+.hero-sidebar-nav h3 {
+  background: #f9f9f9;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
 }
-.course-body {
-  padding: 15px;
+.hero-sidebar-nav h3 .fas {
+  margin-right: 8px;
 }
-.course-title {
-  font-size: 18px;
-  margin-bottom: 10px;
+.course-menu a {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid #f1f1f1;
 }
-.course-meta {
-  font-size: 14px;
-  color: #666;
+.course-menu a:hover {
+  background: #f4f4f4;
+}
+
+.hero-sidebar-ads {
+  float: right;
+  width: 300px; /* 25% */
+}
+.ad-box {
   margin-bottom: 15px;
 }
-.course-bottom {
-  overflow: auto;
-  border-top: 1px solid #eee;
-  padding-top: 10px;
+
+.hero-main-banner {
+  overflow: hidden;
+  padding: 0 15px;
 }
-.price {
-  float: left;
-  font-weight: 700;
-  font-size: 18px;
-  color: #8b0000;
-}
-.course-bottom .btn-sm {
-  float: right;
-  padding: 6px 12px;
-  font-size: 12px;
-  background: #eee;
-  color: #333;
-  border: 1px solid #ccc;
-  font-weight: 600;
-}
-.course-bottom .btn-sm:hover {
-  background: #8b0000;
+
+.stats-bar {
+  background: #007bff;
   color: white;
-  text-decoration: none;
-}
-
-.benefits-grid .benefit {
-  float: left;
-  width: 370px;
-  margin-left: 15px;
-  margin-right: 15px;
   padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.stat-item {
+  float: left;
+  width: 33.33%;
   text-align: center;
+  font-size: 16px;
 }
-.benefit img {
-  width: 64px;
-  height: 64px;
+.stat-item .fas {
+  margin-right: 8px;
+  font-size: 20px;
 }
 
-.test-grid .testimonial {
-  float: left;
-  width: 570px;
-  margin-left: 15px;
-  margin-right: 15px;
+.course-section {
+  margin-bottom: 20px;
+}
+.section-title {
+  font-size: 24px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.section-content {
+  background: #fff;
   padding: 20px;
-  font-style: italic;
+  border-radius: 8px;
 }
-.testimonial cite {
-  display: block;
-  margin-top: 10px;
-  font-weight: 600;
-  color: #333;
+.featured-banner {
+  float: left;
+  width: 380px; /* ~33% */
 }
 
+.course-grid {
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.course-card {
+  float: left;
+  width: 240px; /* 3 cột trong .course-grid */
+  margin: 0 10px 20px 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: relative; /* BẮT BUỘC cho Nhãn */
+  overflow: hidden; /* Giúp nhãn đẹp hơn */
+}
+.course-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.course-card h3 {
+  font-size: 16px;
+  padding: 10px 15px 0 15px;
+  /* Giới hạn 2 dòng chữ */
+  height: 48px; 
+  overflow: hidden;
+}
+.course-teacher {
+  font-size: 13px;
+  color: #666;
+  padding: 0 15px;
+}
+.course-meta {
+  padding: 10px 15px;
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #888;
+}
+.course-meta span {
+  margin-right: 15px;
+}
+/* CSS cho icon khóa học */
+.course-meta .fas {
+  margin-right: 5px;
+  color: #007bff; /* Màu xanh */
+}
+
+/* =================================
+   KHU VỰC TIN TỨC & CHIA SẺ
+================================= */
+.news-section {
+  margin-bottom: 20px;
+}
+.testimonial-col, .news-col {
+  float: left;
+  width: 580px; /* 50% - 20px lề */
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.testimonial-col {
+  margin-right: 40px;
+}
+.quote-icon {
+  font-size: 24px;
+  color: #ccc;
+  float: left;
+  margin-right: 10px;
+}
+.testimonial-card cite {
+  display: block;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.news-card {
+  overflow: auto; /* chứa float */
+}
+.news-card img {
+  float: left;
+  width: 200px;
+  margin-right: 15px;
+}
+.news-card p {
+  font-weight: 600;
+}
+
+/* =================================
+   FOOTER (CHÂN TRANG)
+================================= */
 .site-footer {
   background: #333333;
   color: #eeeeee;
   padding: 30px 0;
-  clear: both;
+  clear: both; /* Đảm bảo nó nằm dưới mọi thứ */
 }
-.footer-inner {
-  width: 1200px;
-  margin: 0 auto;
-  overflow: auto;
-}
-.footer-inner .col {
+.footer-col {
   float: left;
   width: 33.33%;
   padding: 0 15px;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Giúp padding không làm vỡ layout */
 }
-.footer-inner h4 {
+.footer-col h4 {
   color: white;
 }
-.footer-inner a {
-  color: white;
+.footer-col a {
+  color: #ccc;
   display: block;
   margin-bottom: 5px;
 }
-.footer-inner a:hover {
-  color: #8b0000;
+.footer-col a:hover {
+  color: #f0ad4e;
+}
+.footer-col p {
+  color: #ccc;
+}
+.footer-col .fas {
+  margin-right: 8px;
 }
 
-.footer-bottom {
-  text-align: center;
-  border-top: 1px solid #555;
-  padding-top: 20px;
-  margin-top: 20px;
+/* =================================
+   CSS MỚI: NHÃN DÁN (LABELS)
+================================= */
+.label {
+  position: absolute; /* Cho phép nhãn nổi lên trên */
+  top: 10px; /* Cách lề trên 10px */
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+  border-radius: 3px;
+  text-transform: uppercase;
+  z-index: 10; /* Đảm bảo nó nổi lên trên */
+}
+
+.label.new {
+  left: 10px; /* Nằm bên trái */
+  background: #007bff; /* Màu xanh dương */
+}
+
+.label.top-class {
+  right: 10px; /* Nằm bên phải */
+  background: #28a745; /* Màu xanh lá */
+}
+
+.label.hot {
+  left: 10px;
+  background: #dc3545; /* Màu đỏ */
 }
