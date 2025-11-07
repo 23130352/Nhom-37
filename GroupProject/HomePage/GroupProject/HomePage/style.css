@@ -1,0 +1,380 @@
+/* =================================
+   THIẾT LẬP CĂN BẢN
+================================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background: #f0f2f5; /* Màu nền xám nhạt */
+  color: #333;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px 0;
+}
+a { text-decoration: none; color: #333; }
+ul { list-style: none; margin: 0; padding: 0; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* Bộ chứa 1200px căn giữa */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Lớp "clearfix" để chứa các phần tử con bị float */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* =================================
+   HEADER (PHẦN ĐẦU TRANG)
+================================= */
+.site-header {
+  background: #ffffff;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-header .logo {
+  float: left;
+  width: 150px;
+}
+
+/* Cho các nút trôi sang phải */
+.site-header .header-auth {
+  float: right;
+  padding-top: 10px;
+}
+.header-auth .phone {
+  margin-right: 15px;
+  font-weight: 700;
+  color: #f0ad4e; /* Màu cam (thay vì đỏ) */
+}
+/* CSS cho icon điện thoại */
+.header-auth .phone .fas {
+  margin-right: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.btn-ghost {
+  border: 1px solid #ccc;
+  color: #555;
+  margin-right: 10px;
+}
+.btn-primary {
+  background: #f0ad4e; /* Màu cam */
+  color: white;
+  border: 1px solid #f0ad4e;
+}
+.btn-primary:hover {
+  background: #ec971f;
+  color: white;
+}
+
+
+/* Thanh tìm kiếm nằm giữa (dùng kỹ thuật overflow) */
+.site-header .search {
+  overflow: hidden; /* Tự chiếm không gian còn lại */
+  padding: 8px 50px 0 50px;
+}
+.search input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+.search button {
+  width: 10%;
+  float: left;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+.search button:hover {
+  background: #ddd;
+}
+
+/* =================================
+   THANH ĐIỀU HƯỚNG CHÍNH (NAV)
+================================= */
+.site-nav {
+  background: #007bff; /* Màu xanh dương */
+  height: 45px;
+}
+.site-nav li {
+  float: left; /* Cho các item menu nằm ngang */
+}
+.site-nav a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  font-weight: 600;
+}
+.site-nav a:hover {
+  background: #0056b3; /* Màu xanh đậm hơn */
+}
+
+/* =================================
+   MAIN WRAPPER & HERO
+================================= */
+.main-wrapper {
+  padding: 20px 0;
+}
+
+/* Bố cục 3 cột của Hero */
+.hero-section {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.hero-sidebar-nav {
+  float: left;
+  width: 260px; /* 25% - 1 chút */
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.hero-sidebar-nav h3 {
+  background: #f9f9f9;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+}
+.hero-sidebar-nav h3 .fas {
+  margin-right: 8px;
+}
+.course-menu a {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.course-menu a:hover {
+  background: #f4f4f4;
+}
+
+.hero-sidebar-ads {
+  float: right;
+  width: 300px; /* 25% */
+}
+.ad-box {
+  margin-bottom: 15px;
+}
+
+.hero-main-banner {
+  /* Kỹ thuật overflow để chiếm phần còn lại */
+  overflow: hidden;
+  padding: 0 15px; /* Tạo khoảng cách */
+}
+
+/* =================================
+   THANH THỐNG KÊ
+================================= */
+.stats-bar {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.stat-item {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  font-size: 16px;
+}
+.stat-item .fas {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* =================================
+   KHU VỰC KHÓA HỌC (CHUNG)
+================================= */
+.course-section {
+  margin-bottom: 20px;
+}
+.section-title {
+  font-size: 24px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* Bố cục 2 cột: Banner + Lưới */
+.section-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.featured-banner {
+  float: left;
+  width: 380px; /* ~33% */
+}
+
+.course-grid {
+  /* Dùng overflow để chiếm phần còn lại bên phải */
+  overflow: hidden;
+  padding-left: 20px; /* Khoảng cách với banner */
+}
+
+.course-card {
+  float: left;
+  width: 240px; /* 3 cột trong .course-grid */
+  margin: 0 10px 20px 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: relative; /* BẮT BUỘC cho Nhãn */
+  overflow: hidden; /* Giúp nhãn đẹp hơn */
+}
+.course-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.course-card h3 {
+  font-size: 16px;
+  padding: 10px 15px 0 15px;
+  /* Giới hạn 2 dòng chữ */
+  height: 48px; 
+  overflow: hidden;
+}
+.course-teacher {
+  font-size: 13px;
+  color: #666;
+  padding: 0 15px;
+}
+.course-meta {
+  padding: 10px 15px;
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #888;
+}
+.course-meta span {
+  margin-right: 15px;
+}
+/* CSS cho icon khóa học */
+.course-meta .fas {
+  margin-right: 5px;
+  color: #007bff; /* Màu xanh */
+}
+
+/* =================================
+   KHU VỰC TIN TỨC & CHIA SẺ
+================================= */
+.news-section {
+  margin-bottom: 20px;
+}
+.testimonial-col, .news-col {
+  float: left;
+  width: 580px; /* 50% - 20px lề */
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.testimonial-col {
+  margin-right: 40px;
+}
+.quote-icon {
+  font-size: 24px;
+  color: #ccc;
+  float: left;
+  margin-right: 10px;
+}
+.testimonial-card cite {
+  display: block;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.news-card {
+  overflow: auto; /* chứa float */
+}
+.news-card img {
+  float: left;
+  width: 200px;
+  margin-right: 15px;
+}
+.news-card p {
+  font-weight: 600;
+}
+
+/* =================================
+   FOOTER (CHÂN TRANG)
+================================= */
+.site-footer {
+  background: #333333;
+  color: #eeeeee;
+  padding: 30px 0;
+  clear: both; /* Đảm bảo nó nằm dưới mọi thứ */
+}
+.footer-col {
+  float: left;
+  width: 33.33%;
+  padding: 0 15px;
+  box-sizing: border-box; /* Giúp padding không làm vỡ layout */
+}
+.footer-col h4 {
+  color: white;
+}
+.footer-col a {
+  color: #ccc;
+  display: block;
+  margin-bottom: 5px;
+}
+.footer-col a:hover {
+  color: #f0ad4e;
+}
+.footer-col p {
+  color: #ccc;
+}
+.footer-col .fas {
+  margin-right: 8px;
+}
+
+/* =================================
+   CSS MỚI: NHÃN DÁN (LABELS)
+================================= */
+.label {
+  position: absolute; /* Cho phép nhãn nổi lên trên */
+  top: 10px; /* Cách lề trên 10px */
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+  border-radius: 3px;
+  text-transform: uppercase;
+  z-index: 10; /* Đảm bảo nó nổi lên trên */
+}
+
+.label.new {
+  left: 10px; /* Nằm bên trái */
+  background: #007bff; /* Màu xanh dương */
+}
+
+.label.top-class {
+  right: 10px; /* Nằm bên phải */
+  background: #28a745; /* Màu xanh lá */
+}
+
+.label.hot {
+  left: 10px;
+  background: #dc3545; /* Màu đỏ */
+}
