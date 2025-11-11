@@ -3,26 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Học Online — Trang chủ (Bản sao Hocmai)</title>
-  <link rel="stylesheet" href="style.css" />
-
+  <title>Học Online — Trang chủ</title>   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
 </head>
 <body>
 
     <header class="site-header">
     <div class="container clearfix">
-      <a class="logo" href="#">
-        <img src="https://via.placeholder.com/150x50?text=HOCMAI+LOGO" alt="Logo" />
+      <a class="logo" href="index.html">         <img src="https://via.placeholder.com/150x50?text=HOCMAI+LOGO" alt="Logo" />
       </a>
-      
       <div class="header-auth">
-        <a href="#" class="btn btn-ghost">Đăng nhập</a>
-        <a href="#" class="btn btn-primary">Đăng ký</a>
+        <a href="login.html" class="btn btn-ghost">Đăng nhập</a>         <a href="#" class="btn btn-primary">Đăng ký</a>
         <span class="phone"><i class="fas fa-phone-alt"></i> 1900 6933</span>
       </div>
-      
       <form class="search" role="search">
         <input type="search" placeholder="Tìm kiếm khóa học..." />
         <button type="submit"><i class="fas fa-search"></i></button>
@@ -55,7 +48,11 @@
             <li><a href="#">Bồi dưỡng học sinh giỏi</a></li>
             <li><a href="#">LUYỆN THI ĐẠI HỌC</a></li>
             <li><a href="#">Lớp 10 - Lớp 11 - Lớp 12</a></li>
-            <li><a href="#">...</a></li>
+            <li><a href="#">Luyện thi vào 10</a></li>
+            <li><a href="#">Lớp 6 - Lớp 7 - Lớp 8 - Lớp 9</a></li>
+            <li><a href="#">Luyện thi vào 6</a></li>
+            <li><a href="#">Lớp 1 - Lớp 2 - Lớp 3 - Lớp 4 - Lớp 5</a></li>
+            <li><a href="#">Tiền tiểu học</a></li>
           </ul>
         </aside>
         
@@ -82,39 +79,38 @@
             <section class="course-section">
         <h2 class="section-title">Trung học phổ thông</h2>
         <div class="section-content clearfix">
-                    <div class="featured-banner">
-            <img src="https://via.placeholder.com/380x300?text=Banner+Luyện+đề" />
+          <div class="featured-banner">
+            <img src="https://via.placeholder.com/380x300?text=Banner+THPT" />
           </div>
-                    <div class="course-grid">
-                        <article class="course-card">
+          <div class="course-grid">
+            <article class="course-card">
               <span class="label new">NEW</span>
               <span class="label top-class">Top Class</span>
-              <img class="course-image" src="https://via.placeholder.com/250x140?text=Hóa+11" />
-              <h3>Hóa 11 - Lớp Tường Tác</h3>
+              <a href="course-detail.html"><img class="course-image" src="https://via.placeholder.com/250x140?text=Hóa+11" /></a>
+              <h3><a href="course-detail.html">Hóa 11 - Lớp Tường Tác</a></h3>
               <p class="course-teacher">Giáo viên: Cô Đinh Oanh...</p>
               <div class="course-meta">
-                                <span><i class="fas fa-book-open"></i> 84 Bài giảng</span>
+                <span><i class="fas fa-book-open"></i> 84 Bài giảng</span>
                 <span><i class="fas fa-question-circle"></i> 2000 Câu hỏi</span>
               </div>
             </article>
-                        <article class="course-card">
-              <span class="label new">NEW</span>
-              <img class="course-image" src="https://via.placeholder.com/250x140?text=Lý+11" />
-              <h3>Ôn luyện Lịch Sử 11</h3>
+            <article class="course-card">
+              <a href="course-detail.html"><img class="course-image" src="https://via.placeholder.com/250x140?text=Lý+11" /></a>
+              <h3><a href="course-detail.html">Ôn luyện Lịch Sử 11</a></h3>
               <p class="course-teacher">Giáo viên: Thầy HOCMAI</p>
               <div class="course-meta">
                 <span><i class="fas fa-book-open"></i> 0 Bài giảng</span>
                 <span><i class="fas fa-question-circle"></i> 800 Câu hỏi</span>
               </div>
             </article>
-                        <article class="course-card">
-              <span class="label top-class">Top Class</span>
-              <img class="course-image" src="https://via.placeholder.com/250x140?text=Toán+10" />
-              <h3>Phòng luyện Toán 10</h3>
-              <p class="course-teacher">Giáo viên: Thầy HOCMAI</p>
+            <article class="course-card">
+              <span class="label hot">HOT</span>
+              <a href="course-detail.html"><img class="course-image" src="https://via.placeholder.com/250x140?text=IELTS+Target" /></a>
+              <h3><a href="course-detail.html">Luyện thi IELTS Target 6.5</a></h3>
+              <p class="course-teacher">Giáo viên: Cô Hà Trang</p>
               <div class="course-meta">
-                <span><i class="fas fa-book-open"></i> 0 Bài giảng</span>
-                <span><i class="fas fa-question-circle"></i> 2000 Câu hỏi</span>
+                <span><i class="fas fa-book-open"></i> 50 Bài giảng</span>
+                <span><i class="fas fa-question-circle"></i> 1500 Câu hỏi</span>
               </div>
             </article>
           </div>
@@ -124,43 +120,132 @@
             <section class="course-section">
         <h2 class="section-title">Trung học cơ sở</h2>
         <div class="section-content clearfix">
-                    <div class="featured-banner">
+          <div class="featured-banner">
             <img src="https://via.placeholder.com/380x300?text=Banner+Lớp+6-9" />
           </div>
-                    <div class="course-grid">
-                        <article class="course-card">
+          <div class="course-grid">
+            <article class="course-card">
               <span class="label top-class">Top Class</span>
-              <img class="course-image" src="https://via.placeholder.com/250x140?text=Toán+9" />
-              <h3>Nâng cao Toán 9</h3>
-              <p class="course-teacher">Giáo viên:</p>
+              <a href="course-detail.html"><img class="course-image" src="https://via.placeholder.com/250x140?text=Toán+9" /></a>
+              <h3><a href="course-detail.html">Nâng cao Toán 9</a></h3>
+              <p class="course-teacher">Giáo viên: Thầy HOCMAI</p>
               <div class="course-meta">
                 <span><i class="fas fa-book-open"></i> 0 Bài giảng</span>
                 <span><i class="fas fa-question-circle"></i> 2000 Câu hỏi</span>
               </div>
             </article>
-                      </div>
+            <article class="course-card">
+              <span class="label new">NEW</span>
+              <a href="course-detail.html"><img class="course-image" src="https://via.placeholder.com/250x140?text=Văn+8" /></a>
+              <h3><a href="course-detail.html">Ngữ Văn 8 - Tác Phẩm</a></h3>
+              <p class="course-teacher">Giáo viên: Cô HOCMAI</p>
+              <div class="course-meta">
+                <span><i class="fas fa-book-open"></i> 25 Bài giảng</span>
+                <span><i class="fas fa-question-circle"></i> 300 Câu hỏi</span>
+              </div>
+            </article>
+            <article class="course-card">
+              <a href="course-detail.html"><img class="course-image" src="https://via.placeholder.com/250x140?text=Lý+6" /></a>
+              <h3><a href="course-detail.html">Vật Lý 6 - Cơ bản</a></h3>
+              <p class="course-teacher">Giáo viên: Thầy HOCMAI</p>
+              <div class="course-meta">
+                <span><i class="fas fa-book-open"></i> 30 Bài giảng</span>
+                <span><i class="fas fa-question-circle"></i> 400 Câu hỏi</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      
+            <section class="course-section">
+        <h2 class="section-title">Tiểu học</h2>
+        <div class="section-content clearfix">
+          <div class="featured-banner">
+            <img src="https://via.placeholder.com/380x300?text=Banner+Tiểu+Học" />
+          </div>
+          <div class="course-grid">
+            <article class="course-card">
+              <span class="label new">NEW</span>
+              <a href="course-detail.html"><img class="course-image" src="https://via.placeholder.com/250x140?text=Toán+5" /></a>
+              <h3><a href="course-detail.html">Toán Nâng Cao Lớp 5</a></h3>
+              <p class="course-teacher">Giáo viên: Thầy Hùng</p>
+              <div class="course-meta">
+                <span><i class="fas fa-book-open"></i> 30 Bài giảng</span>
+                <span><i class="fas fa-question-circle"></i> 500 Câu hỏi</span>
+              </div>
+            </article>
+            <article class="course-card">
+              <a href="course-detail.html"><img class="course-image" src="https://via.placeholder.com/250x140?text=Tiếng+Việt+3" /></a>
+              <h3><a href="course-detail.html">Tiếng Việt Lớp 3</a></h3>
+              <p class="course-teacher">Giáo viên: Cô Mai</p>
+              <div class="course-meta">
+                <span><i class="fas fa-book-open"></i> 40 Bài giảng</span>
+                <span><i class="fas fa-question-circle"></i> 450 Câu hỏi</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      
+            <section class="course-section">
+        <h2 class="section-title">Lập trình & Kỹ năng</h2>
+        <div class="section-content clearfix">
+          <div class="featured-banner">
+            <img src="https://via.placeholder.com/380x300?text=Banner+Kỹ+Năng" />
+          </div>
+          <div class="course-grid">
+            <article class="course-card">
+              <a href="course-detail.html"><img class="course-image" src="https://via.placeholder.com/250x140?text=Giao+Tiếp" /></a>
+              <h3><a href="course-detail.html">Kỹ năng Giao tiếp Thuyết trình</a></h3>
+              <p class="course-teacher">Giáo viên: Cô Mai Linh</p>
+              <div class="course-meta">
+                <span><i class="fas fa-book-open"></i> 15 Bài giảng</span>
+                <span><i class="fas fa-question-circle"></i> 50 Câu hỏi</span>
+              </div>
+            </article>
+            <article class="course-card">
+              <span class="label top-class">Top Class</span>
+              <a href="course-detail.html"><img class="course-image" src="https://via.placeholder.com/250x140?text=JavaScript" /></a>
+              <h3><a href="course-detail.html">Nhập môn Lập trình Web (JS)</a></h3>
+              <p class="course-teacher">Giáo viên: Thầy Nam Anh</p>
+              <div class="course-meta">
+                <span><i class="fas fa-book-open"></i> 45 Bài giảng</span>
+                <span><i class="fas fa-question-circle"></i> 300 Câu hỏi</span>
+              </div>
+            </article>
+            <article class="course-card">
+              <a href="course-detail.html"><img class="course-image" src="https://via.placeholder.com/250x140?text=Python" /></a>
+              <h3><a href="course-detail.html">Lập trình Python cơ bản</a></h3>
+              <p class="course-teacher">Giáo viên: Thầy HOCMAI</p>
+              <div class="course-meta">
+                <span><i class="fas fa-book-open"></i> 40 Bài giảng</span>
+                <span><i class="fas fa-question-circle"></i> 200 Câu hỏi</span>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
       
             <section class="news-section clearfix">
-                <div class="testimonial-col">
+        <div class="testimonial-col">
           <h2 class="section-title">Lắng nghe và chia sẻ</h2>
-          <div class="testimonial-card">
+        _ <div class="testimonial-card">
             <i class="fas fa-quote-left quote-icon"></i>
-            <p>"Em cảm ơn vì những kiến thức hữu ích..."</p>
+            <p>"Em cảm ơn HOCMAI vì những kiến thức hữu ích..."</p>
             <cite>Phạm Hoàng Quân</cite>
           </div>
         </div>
-                <div class="news-col">
+        <div class="news-col">
           <h2 class="section-title">Các tin tức giáo dục</h2>
           <div class="news-card">
             <img src="https://via.placeholder.com/200x120?text=Tin+tức" />
-            <p></p>
+            <p>Ông Phạm Giang Linh sẽ đại diện cho edTech Việt Nam...</p>
           </div>
-        </div>
+  _     </div>
       </section>
 
-    </div>   </div>     <footer class="site-footer">
+    </div>   </div>   
+    <footer class="site-footer">
     <div class="container clearfix">
       <div class="footer-col">
         <h4>Về HOCMAI</h4>
@@ -178,7 +263,13 @@
         <p><i class="fas fa-envelope"></i> Email: support@hocmai.vn</p>
       </div>
     </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year">2025</span> Bản quyền thuộc về HOCMAI.</p>
+      </div>
+    </div>
   </footer>
   
-  </body>
+    
+</body>
 </html>
