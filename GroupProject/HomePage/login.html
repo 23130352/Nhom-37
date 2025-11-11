@@ -1,1 +1,86 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Đăng nhập - Học Online</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
 
+    <header class="site-header">
+    <div class="container clearfix">
+      <a class="logo" href="index.html">         <img src="https://via.placeholder.com/150x50?text=HOCMAI+LOGO" alt="Logo" />
+      </a>
+      <div class="header-auth">
+        <a href="login.html" class="btn btn-ghost">Đăng nhập</a>
+        <a href="#" class="btn btn-primary">Đăng ký</a>
+        <span class="phone"><i class="fas fa-phone-alt"></i> 1900 6933</span>
+      </div>
+      <form class="search" role="search">
+        <input type="search" placeholder="Tìm kiếm khóa học..." />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </header>
+
+    <div class="main-wrapper">
+    <div class="container">
+
+      <div class="auth-box">
+        <h2>Đăng nhập tài khoản</h2>
+        <form action="#">
+          <div class="form-group">
+            <label for="email">Email hoặc Tên đăng nhập</label>
+            <input type="email" id="email" placeholder="Nhập email của bạn" />
+          </div>
+          <div class="form-group">
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" placeholder="Nhập mật khẩu" />
+          </div>
+          <div class="form-group-inline clearfix">
+            <label class="checkbox-label">
+              <input type="checkbox" /> Ghi nhớ tôi
+            </label>
+            <a href="#" class="forgot-password">Quên mật khẩu?</a>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-full-width btn-buy">Đăng nhập</button>
+          </div>
+        </form>
+        <p class="auth-switch">
+          Chưa có tài khoản? <a href="#">Đăng ký ngay</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  
+    <footer class="site-footer">
+    <div class="container clearfix">
+      <div class="footer-col">
+        <h4>Về HOCMAI</h4>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Tuyển dụng</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <a href="#">Chính sách</a>
+        <a href="#">Liên hệ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Liên hệ</h4>
+        <p><i class="fas fa-phone-alt"></i> Hotline: 1900 6933</p>
+        <p><i class="fas fa-envelope"></i> Email: support@hocmai.vn</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year">2025</span> Bản quyền thuộc về HOCMAI.</p>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
