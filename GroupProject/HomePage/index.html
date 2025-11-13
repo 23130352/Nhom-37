@@ -1,253 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Học Online — Trang chủ</title>
-  <meta name="description" content="Trang bán khóa học cho học sinh — khoá học lập trình, Toán, Tiếng Anh..."/>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <meta charset="UTF-8">
+  <title>Học Online — Trang chủ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="site">
 
-        <header class="site-header" role="banner">
-      <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Trang chủ — Học Online">
-                    <img src="https://via.placeholder.com/44x44?text=LOGO" alt="Học Online logo" class="brand-logo" />
-          <span class="brand-name">HọcOnline</span>
-        </a>
-        <form class="search" role="search" aria-label="Tìm khóa học">
-          <input type="search" id="q" name="q" placeholder="Tìm khóa học, môn học..." aria-label="Tìm khóa học"/>
-          <button type="submit" aria-label="Tìm">Tìm</button>
-        </form>
-        <nav class="top-nav" aria-label="Truy cập nhanh">
-          <a href="#" class="nav-link">Khóa học</a>
-          <a href="#" class="nav-link">Lộ trình</a>
-          <a href="#" class="nav-link">Blog</a>
-          <a href="#" class="nav-link">Hỗ trợ</a>
-          <div class="auth">
-            <a href="login.html" class="btn btn-ghost">Đăng nhập</a>
-            <a href="#" class="btn btn-primary">Đăng ký</a>
-          </div>
-        </nav>
-      </div>
-    </header>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">Logo</div>
+    <div class="search-box">
+      <input type="text" placeholder="Tìm kiếm khóa học...">
+      <button>🔍</button>
+    </div>
+    <div class="header-buttons">
+      <button class="btn-login">Đăng nhập</button>
+      <button class="btn-register">Đăng ký</button>
+      <span class="hotline">📞 1900 6933</span>
+    </div>
+  </header>
 
-        <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-left">
-          <h1>Học hiệu quả — Chuẩn đầu ra — Giáo viên chất lượng</h1>
-          <p class="lead">Khoá học trực tuyến cho học sinh: Toán, Lý, Hóa, Tiếng Anh, lập trình... Học mọi lúc, mọi nơi.</p>
-          <div class="hero-cta">
-            <a href="#courses" class="btn btn-cta">Khám phá khóa học</a>
-            <a href="#" class="btn btn-outline">Dùng thử miễn phí</a>
-          </div>
-          <ul class="hero-features">
-            <li><strong>Giáo viên TOP:</strong> bài giảng chi tiết</li>
-            <li><strong>Bài tập & đề thi:</strong> luyện tập theo trình độ</li>
-            <li><strong>Học linh hoạt:</strong> video + tài liệu</li>
-          </ul>
-        </div>
-        <div class="hero-right">
-                    <img src="https://via.placeholder.com/420x300?text=Hero+Image" alt="Học online illustration" />
-        </div>
-      </div>
-    </section>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+  <a href="index.html">Trang chủ</a>
+  <a href="courses.html">Khóa học</a>
+  <a href="about.html">Giới thiệu</a>
+  <a href="contact.html">Liên hệ</a>
+  <a href="login.html">Đăng nhập</a>
+  <a href="register.html" class="highlight">Đăng ký</a>
+</nav>
 
-        <section class="filters container" id="course-filters">
-      <button class="chip active">Tất cả</button>
-      <button class="chip">Toán</button>
-      <button class="chip">Tiếng Anh</button>
-      <button class="chip">Lập trình</button>
-      <button class="chip">Kĩ năng</button>
-    </section>
 
-        <section id="courses" class="container section">
-      <div class="section-head">
-        <h2>Khóa học nổi bật</h2>
-        <a href="#" class="link-more">Xem tất cả</a>
-      </div>
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h3>📚 Các khóa học</h3>
+      <ul>
+        <li>Đại học - Cao đẳng</li>
+        <li>Bổ trợ Phương pháp - Kĩ năng</li>
+        <li>Bồi dưỡng học sinh giỏi</li>
+        <li>LUYỆN THI ĐẠI HỌC</li>
+        <li>Lớp 10 - Lớp 11 - Lớp 12</li>
+        <li>Luyện thi vào 10</li>
+        <li>Lớp 6 - Lớp 7 - Lớp 8 - Lớp 9</li>
+        <li>Luyện thi vào 6</li>
+        <li>Lớp 1 - Lớp 2 - Lớp 3 - Lớp 4 - Lớp 5</li>
+        <li>Tiền tiểu học</li>
+      </ul>
+    </aside>
 
-      <div class="grid courses-grid" aria-live="polite">
-        
-                <article class="card course" data-category="toan">
-          <span class="label hot">HOT</span>
-          <a href="course-detail.html">
-            <img class="course-cover" src="https://via.placeholder.com/400x220?text=Toan+Lop+10" alt="Khóa Toán Lớp 10"/>
-          </a>
-          <div class="course-body">
-            <h3 class="course-title"><a href="course-detail.html">Toán Lớp 10 - Chuyên đề Đại số</a></h3>
-            <p class="course-meta"><i class="fas fa-chalkboard-teacher"></i> Giảng viên: Thầy A</p>
-            <div class="course-bottom">
-              <div class="price"><strong>₫199,000</strong> <span class="price-old">₫399,000</span></div>
-              <a class="btn btn-sm" href="course-detail.html">Xem</a>
-            </div>
-          </div>
-        </article>
+    <!-- COURSE CONTENT -->
+    <section class="course-section">
+      <!-- Trung học phổ thông -->
+      <div class="section-header"><h2>Trung học phổ thông</h2></div>
+      <div class="course-grid">
+        <div class="course-card"><img src="https://i.imgur.com/t1rHhU4.jpg"><div class="course-info"><h4>Hóa 11 - Lớp Tương Tác</h4><p>Cô Đinh Oanh</p><div class="course-stats"><span>84 Bài giảng</span><span>2000 Câu hỏi</span></div></div></div>
+        <div class="course-card"><img src="https://i.imgur.com/v1q5GdU.jpg"><div class="course-info"><h4>Ôn luyện Lịch Sử 11</h4><p>Thầy HOCMAI</p><div class="course-stats"><span>50 Bài giảng</span><span>800 Câu hỏi</span></div></div></div>
+        <div class="course-card"><img src="https://i.imgur.com/vEXF92K.jpg"><div class="course-info"><h4>Luyện thi IELTS Target 6.5</h4><p>Cô Phương Hà</p><div class="course-stats"><span>120 Bài giảng</span><span>3000 Câu hỏi</span></div></div></div>
+        <div class="course-card"><img src="https://i.imgur.com/ZvC5G1I.jpg"><div class="course-info"><h4>Toán 12 - Tổng ôn THPTQG</h4><p>Thầy Nguyễn Bá Tuấn</p><div class="course-stats"><span>95 Bài giảng</span><span>2500 Câu hỏi</span></div></div></div>
+        <div class="course-card"><img src="https://i.imgur.com/LV5smhT.jpg"><div class="course-info"><h4>Văn 12 - Chinh phục điểm 9+</h4><p>Cô Nguyễn Diệu Linh</p><div class="course-stats"><span>60 Bài giảng</span><span>1500 Câu hỏi</span></div></div></div>
+      </div>
 
-                <article class="card course" data-category="tieng-anh">
-          <span class="label new">NEW</span>
-          <a href="course-detail.html">
-            <img class="course-cover" src="https://via.placeholder.com/400x220?text=Tieng+Anh+Lop+9" alt="Khóa Tiếng Anh"/>
-          </a>
-          <div class="course-body">
-            <h3 class="course-title"><a href="course-detail.html">Tiếng Anh Lớp 9 - Giao tiếp</a></h3>
-            <p class="course-meta"><i class="fas fa-chalkboard-teacher"></i> Giảng viên: Cô B</p>
-            <div class="course-bottom">
-              <div class="price"><strong>₫149,000</strong> <span class="price-old">₫299,000</span></div>
-              <a class="btn btn-sm" href="course-detail.html">Xem</a>
-            </div>
-          </div>
-        </article>
+      <!-- Trung học cơ sở -->
+      <div class="section-header"><h2>Trung học cơ sở</h2></div>
+      <div class="course-grid">
+        <div class="course-card"><img src="https://i.imgur.com/DaBaN7W.jpg"><div class="course-info"><h4>Toán 9 - Luyện thi vào 10</h4><p>Thầy Phạm Quốc Hưng</p><div class="course-stats"><span>70 Bài giảng</span><span>1800 Câu hỏi</span></div></div></div>
+        <div class="course-card"><img src="https://i.imgur.com/A5gJpRm.jpg"><div class="course-info"><h4>Ngữ văn 8 - Cơ bản & Nâng cao</h4><p>Cô Nguyễn Thảo</p><div class="course-stats"><span>65 Bài giảng</span><span>1000 Câu hỏi</span></div></div></div>
+        <div class="course-card"><img src="https://i.imgur.com/Mn6vB3E.jpg"><div class="course-info"><h4>Tiếng Anh 9 - Ôn thi chuyển cấp</h4><p>Cô Trần Hương</p><div class="course-stats"><span>80 Bài giảng</span><span>2100 Câu hỏi</span></div></div></div>
+      </div>
 
-                <article class="card course" data-category="lap-trinh">
-          <span class="label top-class">Top Class</span>
-          <a href="course-detail.html">
-            <img class="course-cover" src="https://via.placeholder.com/400x220?text=Lap+Trinh+Python" alt="Khóa Lập trình Python"/>
-          </a>
-          <div class="course-body">
-            <h3 class="course-title"><a href="course-detail.html">Lập trình Python cho học sinh</a></h3>
-            <p class="course-meta"><i class="fas fa-chalkboard-teacher"></i> Giảng viên: Thầy C</p>
-            <div class="course-bottom">
-              <div class="price"><strong>₫249,000</strong> <span class="price-old">₫499,000</span></div>
-              <a class="btn btn-sm" href="course-detail.html">Xem</a>
-            </div>
-          </div>
-        </article>
+      <!-- Tiểu học -->
+      <div class="section-header"><h2>Tiểu học</h2></div>
+      <div class="course-grid">
+        <div class="course-card"><img src="https://i.imgur.com/mYwk5Sa.jpg"><div class="course-info"><h4>Toán lớp 5 - Nâng cao</h4><p>Cô Bùi Hạnh</p><div class="course-stats"><span>40 Bài giảng</span><span>900 Câu hỏi</span></div></div></div>
+        <div class="course-card"><img src="https://i.imgur.com/fI1m3Y8.jpg"><div class="course-info"><h4>Tiếng Việt lớp 4</h4><p>Thầy Quang Minh</p><div class="course-stats"><span>45 Bài giảng</span><span>1200 Câu hỏi</span></div></div></div>
+        <div class="course-card"><img src="https://i.imgur.com/G1FxVxE.jpg"><div class="course-info"><h4>Khoa học tự nhiên lớp 5</h4><p>Cô Minh Phương</p><div class="course-stats"><span>30 Bài giảng</span><span>600 Câu hỏi</span></div></div></div>
+      </div>
 
-                <article class="card course" data-category="toan">
-          <a href="course-detail.html">
-            <img class="course-cover" src="https://via.placeholder.com/400x220?text=Luyen+Thi" alt="Khóa Lý"/>
-          </a>
-          <div class="course-body">
-            <h3 class="course-title"><a href="course-detail.html">Vật Lý - Luyện thi Đại học</a></h3>
-            <p class="course-meta"><i class="fas fa-chalkboard-teacher"></i> Giảng viên: Thầy D</p>
-            <div class="course-bottom">
-              <div class="price"><strong>₫179,000</strong> <span class="price-old">₫350,000</span></div>
-              <a class="btn btn-sm" href="course-detail.html">Xem</a>
-            </div>
-          </div>
-        </article>
+      <!-- Ngoại ngữ -->
+      <div class="section-header"><h2>Ngoại ngữ</h2></div>
+      <div class="course-grid">
+        <div class="course-card"><img src="https://i.imgur.com/XVnGcFu.jpg"><div class="course-info"><h4>Tiếng Anh Giao tiếp</h4><p>Mr. John</p><div class="course-stats"><span>100 Bài giảng</span><span>4000 Câu hỏi</span></div></div></div>
+        <div class="course-card"><img src="https://i.imgur.com/1l4rglD.jpg"><div class="course-info"><h4>Tiếng Nhật sơ cấp N5</h4><p>Cô Kaori</p><div class="course-stats"><span>80 Bài giảng</span><span>2200 Câu hỏi</span></div></div></div>
+        <div class="course-card"><img src="https://i.imgur.com/G9g7KqW.jpg"><div class="course-info"><h4>Tiếng Hàn giao tiếp cơ bản</h4><p>Thầy Kim</p><div class="course-stats"><span>75 Bài giảng</span><span>2000 Câu hỏi</span></div></div></div>
+      </div>
 
-                <article class="card course" data-category="toan">
-          <span class="label new">NEW</span>
-          <a href="course-detail.html">
-            <img class="course-cover" src="https://via.placeholder.com/400x220?text=Toan+Lop+5" alt="Khóa Toán 5"/>
-          </a>
-          <div class="course-body">
-            <h3 class="course-title"><a href="course-detail.html">Toán Nâng Cao Lớp 5</a></h3>
-            <p class="course-meta"><i class="fas fa-chalkboard-teacher"></i> Giảng viên: Thầy Hùng</p>
-            <div class="course-bottom">
-              <div class="price"><strong>₫99,000</strong> <span class="price-old">₫199,000</span></div>
-              <a class="btn btn-sm" href="course-detail.html">Xem</a>
-            </div>
-          </div>
-        </article>
+      <!-- Kỹ năng & Chứng chỉ -->
+      <div class="section-header"><h2>Kỹ năng & Chứng chỉ</h2></div>
+      <div class="course-grid">
+        <div class="course-card"><img src="https://i.imgur.com/QS5ZjWi.jpg"><div class="course-info"><h4>Tin học văn phòng - MOS</h4><p>Thầy Nguyễn Hoàng</p><div class="course-stats"><span>60 Bài giảng</span><span>1600 Câu hỏi</span></div></div></div>
+        <div class="course-card"><img src="https://i.imgur.com/hOqSWqB.jpg"><div class="course-info"><h4>Kỹ năng thuyết trình</h4><p>Cô Thu Hà</p><div class="course-stats"><span>40 Bài giảng</span><span>700 Câu hỏi</span></div></div></div>
+        <div class="course-card"><img src="https://i.imgur.com/6KozMUp.jpg"><div class="course-info"><h4>Lập trình Python cơ bản</h4><p>Thầy Lê Minh</p><div class="course-stats"><span>55 Bài giảng</span><span>1300 Câu hỏi</span></div></div></div>
+      </div>
+    </section>
+  </main>
 
-                <article class="card course" data-category="ki-nang">
-          <a href="course-detail.html">
-            <img class="course-cover" src="https://via.placeholder.com/400x220?text=Ky+Nang" alt="Khóa Kỹ Năng"/>
-          </a>
-          <div class="course-body">
-            <h3 class="course-title"><a href="course-detail.html">Kỹ năng Giao tiếp Thuyết trình</a></h3>
-            <p class="course-meta"><i class="fas fa-chalkboard-teacher"></i> Giảng viên: Cô Mai Linh</p>
-            <div class="course-bottom">
-              <div class="price"><strong>₫129,000</strong></div>
-              <a class="btn btn-sm" href="course-detail.html">Xem</a>
-            </div>
-          </div>
-        </article>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>🎓 18 năm Giáo dục trực tuyến | 👥 7.733.867 Thành viên | 🏆 Nền tảng học trực tuyến số 1</p>
+  </footer>
 
-                <article class="card course" data-category="tieng-anh">
-          <span class="label hot">HOT</span>
-          <a href="course-detail.html">
-            <img class="course-cover" src="https://via.placeholder.com/400x220?text=IELTS" alt="Khóa IELTS"/>
-          </a>
-          <div class="course-body">
-            <h3 class="course-title"><a href="course-detail.html">Luyện thi IELTS Target 6.5</a></h3>
-            <p class="course-meta"><i class="fas fa-chalkboard-teacher"></i> Giảng viên: Cô Hà Trang</p>
-            <div class="course-bottom">
-              <div class="price"><strong>₫299,000</strong> <span class="price-old">₫599,000</span></div>
-              <a class="btn btn-sm" href="course-detail.html">Xem</a>
-            </div>
-          </div>
-        </article>
-        
-                <article class="card course" data-category="lap-trinh">
-          <a href="course-detail.html">
-            <img class="course-cover" src="https://via.placeholder.com/400x220?text=JavaScript" alt="Khóa JavaScript"/>
-          </a>
-          <div class="course-body">
-            <h3 class="course-title"><a href="course-detail.html">Nhập môn Lập trình Web (JS)</a></h3>
-            <p class="course-meta"><i class="fas fa-chalkboard-teacher"></i> Giảng viên: Thầy Nam Anh</p>
-            <div class="course-bottom">
-              <div class="price"><strong>₫249,000</strong> <span class="price-old">₫499,000</span></div>
-              <a class="btn btn-sm" href="course-detail.html">Xem</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-        <section class="benefits container section">
-      <h2>Vì sao chọn chúng tôi</h2>
-      <div class="grid benefits-grid">
-        <div class="benefit">
-          <img src="https://via.placeholder.com/64x64?text=Icon" alt="">
-          <h4>Giáo trình chuẩn</h4>
-          <p>Tài liệu biên soạn sát chương trình học.</p>
-        </div>
-        <div class="benefit">
-          <img src="https://via.placeholder.com/64x64?text=Icon" alt="">
-          <h4>Luyện đề & đánh giá</h4>
-          <p>Bộ đề tự luyện có đáp án chi tiết.</p>
-        </div>
-        <div class="benefit">
-          <img src="https://via.placeholder.com/64x64?text=Icon" alt="">
-          <h4>Giáo viên chuyên môn</h4>
-          <p>Hệ thống giảng viên có kinh nghiệm giảng dạy.</p>
-        </div>
-      </div>
-    </section>
-
-        <section class="testimonials container section">
-      <h2>Học viên nói gì</h2>
-      <div class="grid test-grid">
-        <blockquote class="testimonial card">
-          <p>Khoá học rất hữu ích, bài giảng ngắn gọn rõ ràng, mình tiến bộ rõ rệt.</p>
-          <cite>— Học viên: Nguyễn A</cite>
-        </blockquote>
-        <blockquote class="testimonial card">
-          <p>Giáo viên tận tâm, có nhiều bài tập luyện tập. Thời gian linh hoạt dễ sắp xếp.</p>
-          <cite>— Học viên: Lê B</cite>
-        </blockquote>
-      </div>
-    </section>
-
-        <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="col">
-          <h4>HọcOnline</h4>
-          <p>Trang học trực tuyến dành cho học sinh — video, bài tập, livestream.</p>
-        </div>
-        <div class="col">
-          <h4>Liên hệ</h4>
-          <p>email: support@hoconline.vn<br/>Hotline: 0123 456 789</p>
-        </div>
-        <div class="col">
-          <h4>Về chúng tôi</h4>
-          <a href="#">Giới thiệu</a><br/>
-          <a href="#">Tuyển dụng</a><br/>
-          <a href="#">Chính sách</a>
-        </div>
-      </div>
-      <div class="footer-bottom container">
-        <small>© 2025 HọcOnline. Bản quyền thuộc về HọcOnline.</small>
-d   </div>
-    </footer>
-
-  </div>
-  </body>
+</body>
 </html>
